@@ -1,4 +1,4 @@
-# sketchNote
+# sketcinghNote
 基于musicxml的音符成像艺术
 
 museScore和其他记谱软件的默认排版可能无法按预期渲染乐谱，请先加载预制格式文件：
