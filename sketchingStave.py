@@ -1,4 +1,3 @@
-
 from PIL import Image
 import xml.etree.ElementTree as ET
 import easygui
