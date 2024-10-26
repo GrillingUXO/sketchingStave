@@ -85,12 +85,10 @@ def add_blank_measures(score, count=9):
     for _ in range(count):
         measure = ET.SubElement(part, 'measure')
         
-        # Fill each blank measure with white notes
         for chord_index in range(16):
             for _ in range(20):  # 20 notes in each chord
                 note = ET.SubElement(measure, 'note')
                 
-                # Set pitch to white note (e.g., C4) and color to white
                 pitch = ET.SubElement(note, 'pitch')
                 ET.SubElement(pitch, 'step').text = 'C'
                 ET.SubElement(pitch, 'octave').text = '4'
@@ -99,7 +97,6 @@ def add_blank_measures(score, count=9):
                 ET.SubElement(note, 'voice').text = "1"
                 ET.SubElement(note, 'stem').text = "up"
                 
-                # White color for notehead
                 notehead = ET.SubElement(note, 'notehead')
                 notehead.set('color', "#FFFFFF")
                 notehead.text = "normal"
@@ -110,11 +107,11 @@ def map_pixels_to_notes(score, color_image):
     
     # 区块分配
     if len(color_image) != 160 or any(len(row) != 160 for row in color_image):
-        raise ValueError("Image size must be 160x160 pixels.")
+        raise ValueError("错误：没有正确处理图片至160*160。")
     if len(measures) < 89:
-        raise ValueError("MusicXML must contain at least 89 measures (9 blank + 80 for content).")
+        raise ValueError("错误：没有正确映射为89个小节。")
     
-    # Note positions, from E7 to B1, aligned with measure layout
+    # 和弦内音符映射，E7到B1
     note_positions = [
         ('E', 7), ('C', 7), ('A', 6), ('F', 6), ('D', 6),
         ('B', 5), ('G', 5), ('E', 5), ('C', 5), ('A', 4),
@@ -131,7 +128,7 @@ def map_pixels_to_notes(score, color_image):
             
             measure = measures[measure_index]
             
-            # 一个区块
+            # 一个小节
             x_start = measure_col * 16
             y_start = measure_row * 20
             
