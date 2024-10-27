@@ -8,7 +8,7 @@ museScore和其他记谱软件的默认排版可能无法按预期渲染乐谱�
 <img width="1280" alt="Screen Shot 2024-10-26 at 1 18 05 PM" src="https://github.com/user-attachments/assets/20ed755d-c6da-4a43-abbf-e4ae2bb4a014">
 
 原图：
-![processed_image 12 34 47 PM](https://github.com/user-attachments/assets/4928a0be-8536-4cc8-aa4a-0a931aef0525)
+<img width="471" alt="Screen Shot 2024-10-26 at 11 41 24 AM" src="https://github.com/user-attachments/assets/6c70e5cd-ce90-4e62-9f89-30def3bfdc2e">
 
 
 
