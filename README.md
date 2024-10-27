@@ -1,6 +1,7 @@
 # sketcingStave
 基于musicxml的音符成像艺术
 
+
 不同记谱软件的默认排版可能无法按预期渲染乐谱，但调整的思路无非就是staffDistance调整为16sp，noteDistance调整为0sp，一行固定为10个小节，一页容纳80个小节，这些手动调整即可。此处给出的是适于museScore的.mss格式文件。其他记谱软件的格式文件（.lib和.musx）等待补充：
 
 <img width="1280" alt="Screen Shot 2024-10-26 at 1 16 50 PM" src="https://github.com/user-attachments/assets/28159cb5-0d21-4322-8ab6-d52b611c7842">
