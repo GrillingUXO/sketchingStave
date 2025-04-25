@@ -1,6 +1,7 @@
 # sketcingStave
 
 Mosaic art based on musicxml notes 
+
 The default formatting of different software may not render the score as expected. Here, the format file of musescore is provided.
 
 <img width="1280" alt="Screen Shot 2024-10-27 at 9 25 35 PM" src="https://github.com/user-attachments/assets/350edd30-c806-4f13-8da1-014963df9a0b">
